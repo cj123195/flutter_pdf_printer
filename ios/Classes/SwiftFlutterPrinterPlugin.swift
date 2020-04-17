@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftFlutterPrinterPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_printer", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "sample.flutter.io/printer",binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterPrinterPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
